@@ -1,2 +1,2 @@
 # HH-parser
- Scropt for analyzing current requirements for recruiters
+ Script for analyzing current requirements for recruiters
