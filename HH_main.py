@@ -5,6 +5,7 @@ import pandas as pd
 import time
 import sys
 import pickle
+import pandas as pd
 
 
 def links_collector(url, links_base):
@@ -55,7 +56,9 @@ def data_collector(links_base):
             print(d.get_text())
             data.append(d.get_text())
 
-    with open(f'data.data', 'wb') as file:
+    df = pd.DataFrame({'link': links_base, 'skills': data})
+
+    with open(f'df.data', 'wb') as file:
         pickle.dump(data, file)
 
 
