@@ -5,8 +5,7 @@ import time
 import pickle
 import pandas as pd
 import random
-from Configurations.pw import matvei_pass
-from Share_monitoring.main import gemail_sender
+from Share_monitoring.main import gmail_sender
 
 
 def links_collector(url, links_base):
@@ -122,7 +121,7 @@ if __name__ == '__main__':
     # salary_collector(links)
     df = make_df()
     to_excel(df)
-    gemail_sender(epass=matvei_pass, email_theme='HI Ozzy')
+    gmail_sender()
 
 
 
